@@ -1,0 +1,4 @@
+schematics ckt-ltc1877.sch
+output-name ../pcb/ckt-ltc1877
+skip-m4
+elements-dir ../fp
