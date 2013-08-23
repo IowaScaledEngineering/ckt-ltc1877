@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 85000 48000]
 
 Grid[500.0 0 0 0]
-Cursor[0 15500 0.000000]
+Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[800 800 800 800 2000 800]
-Flags("showdrc,nameonpcb,uniquename,clearnew,snappin")
+Flags("showdrc,nameonpcb,uniquename,clearnew")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -892,7 +892,7 @@ Element["" "LTC_MS8" "U1" "unknown" 44000 16000 -13496 -14000 0 100 ""]
 
 Element["hidename" "JUMPER3" "J1" "unknown" 7500 14000 11000 -5000 3 100 ""]
 (
-	Pin[0 0 6000 3000 6600 3800 "1" "1" "square,thermal(0X)"]
+	Pin[0 0 6000 3000 6600 3800 "1" "1" "selected,square,thermal(0X)"]
 	Pin[0 10000 6000 3000 6600 3800 "2" "2" "thermal(0X)"]
 	Pin[0 20000 6000 3000 6600 3800 "3" "3" "thermal(0X,1X)"]
 	ElementLine [-5000 -5000 -5000 25000 1000]
@@ -1000,6 +1000,19 @@ Layer(4 "silk")
 	Line[84500 47500 84500 500 1000 2000 "clearline"]
 	Line[84500 500 500 500 1000 2000 "clearline"]
 	Line[500 500 500 47500 1000 2000 "clearline"]
+	Line[2500 9000 12500 9000 1000 2000 "clearline"]
+	Line[12500 9000 12500 39000 1000 2000 "clearline"]
+	Line[12500 39000 2500 39000 1000 2000 "clearline"]
+	Line[2500 39000 2500 9000 1000 2000 "clearline"]
+	Line[2500 9000 2500 19000 1000 2000 "clearline"]
+	Line[2500 19000 12500 19000 1000 2000 "clearline"]
+	Text[46000 45500 0 100 "CKT-LTC1877" "clearline,onsolder"]
+	Text[65500 9000 0 100 "v1.0" "clearline,onsolder"]
+	Text[16000 17000 0 100 "IN" "clearline,onsolder"]
+	Text[15500 27000 0 100 "GND" "clearline,onsolder"]
+	Text[15500 37043 0 100 "OUT" "clearline,onsolder"]
+	Text[47500 30500 0 100 "Iowa Scaled" "clearline,onsolder"]
+	Text[49000 23500 0 100 "Engineering" "clearline,onsolder"]
 )
 Layer(5 "silk")
 (
