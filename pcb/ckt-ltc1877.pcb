@@ -6,11 +6,11 @@ FileVersion[20070407]
 PCB["" 85000 48000]
 
 Grid[500.0 0 0 0]
-Cursor[0 0 0.000000]
+Cursor[0 3500 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[800 800 800 800 2000 800]
-Flags("showdrc,nameonpcb,uniquename,clearnew,snappin")
+Flags("showdrc,nameonpcb,uniquename,clearnew")
 Groups("1,c:2,s:3")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
@@ -787,7 +787,7 @@ Symbol['~' 1200]
 	SymbolLine[2000 3500 2500 3000 800]
 )
 Attribute("PCB::grid::unit" "mil")
-Via[26000 7000 3600 2000 0 2000 "" "thermal(0S)"]
+Via[35000 7000 3600 2000 0 2000 "" "thermal(0S)"]
 Via[39500 29000 3600 2000 0 2000 "" ""]
 Via[67500 30000 3600 2000 0 2000 "" ""]
 Via[72500 30000 3600 2000 0 2000 "" ""]
@@ -877,7 +877,7 @@ Element["" "0805" "R2" "287k" 30000 22000 -3650 -12650 0 100 ""]
 
 	)
 
-Element["" "LTC_MS8" "U1" "unknown" 44000 16000 -13496 -14000 0 100 ""]
+Element["" "LTC_MS8" "U1" "unknown" 44000 16000 9500 -12500 0 100 ""]
 (
 	Pad[-3840 7325 -3840 9475 1650 2000 2250 "RUN" "1" "square,edge2"]
 	Pad[-1280 7325 -1280 9475 1650 2000 2250 "ITH" "2" "square,edge2"]
@@ -1003,7 +1003,7 @@ Layer(1 "component")
 )
 Layer(2 "solder")
 (
-	Line[26000 7000 50500 7000 1000 2000 "clearline"]
+	Line[35000 7000 50500 7000 1000 2000 "clearline"]
 	Line[50500 7000 52000 8500 1000 2000 "clearline"]
 	Line[52000 8500 52000 27500 1000 2000 "clearline"]
 	Line[52000 27500 50500 29000 1000 2000 "clearline"]
@@ -1027,6 +1027,10 @@ Layer(2 "solder")
 )
 Layer(3 "outline")
 (
+	Line[0 0 85000 0 1000 2000 "clearline"]
+	Line[85000 0 85000 48000 1000 2000 "clearline"]
+	Line[85000 48000 0 48000 1000 2000 "clearline"]
+	Line[0 48000 0 0 1000 2000 "clearline"]
 )
 Layer(4 "silk")
 (
@@ -1045,8 +1049,8 @@ Layer(4 "silk")
 	Text[16000 17000 0 100 "IN" "clearline,onsolder"]
 	Text[15500 27000 0 100 "GND" "clearline,onsolder"]
 	Text[15500 37043 0 100 "OUT" "clearline,onsolder"]
-	Text[47500 30500 0 100 "Iowa Scaled" "clearline,onsolder"]
-	Text[49000 23500 0 100 "Engineering" "clearline,onsolder"]
+	Text[49500 23500 0 100 "Iowa Scaled" "clearline,onsolder"]
+	Text[51500 17000 0 100 "Engineering" "clearline,onsolder"]
 )
 Layer(5 "silk")
 (
